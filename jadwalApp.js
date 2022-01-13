@@ -37,7 +37,7 @@ function error(){
 
 function userLocation(){
     if(!navigator.geolocation){
-        alert('Geolocation tidak di dukung didalam browser anda, silahkan gunakan browser lain');
+        alert('Browsermu kurang canggih boss, mbok di Upgrade');
     }else{
         navigator.geolocation.getCurrentPosition(success, error);
     }
@@ -46,7 +46,7 @@ function userLocation(){
 function index(){
     let app         = document.getElementById('app');
     let h3          = document.createElement('h3');
-    h3.innerHTML    = 'Prayer Times';
+    h3.innerHTML    = 'Jadwal Waktu Sholat';
 
     app.appendChild(h3);
 
